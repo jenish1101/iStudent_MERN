@@ -1,0 +1,194 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f8f8f8; */
+    background-color: #C5BDB4;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Form styles */
+.student-form {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.student-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.student-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.student-form input[type="text"],
+.student-form select,
+.student-form input[type="date"],
+.student-form input[type="number"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.student-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.student-form button:hover {
+    background-color: #45a049;
+}
+
+/* Photo capture styles */
+.photo-capture {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.photo-capture h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#facePhoto {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#photoInput {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+#gender{
+    display: flex;
+}
+
+.radio-pad{
+    display: flex;
+    margin: 0px 5px;
+}
+
+.student_img{
+    display: inline-block;
+    background-color: rgb(189, 211, 243);
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 25px 10px;
+}
+
+.student_img_div{
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.student_img_div button{
+    padding: 5px;
+    border-radius: 50px;
+    margin-top: 5px;
+    width: 33%;
+    background-color: #4caf50;
+}
+
+.photo{
+    display: flex;
+    justify-content: end;
+    margin-right: 4%;
+}
+
+#addr{
+    resize: none;
+    height: 100px;
+}
+
+#number{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+#course{
+        /* border: 2px solid black; */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        width: 100%;
+}
+
+.Home-Container{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(45, 18, 8, 1);
+    /* background-color: #DFDACD; */
+}
+
+.text-center {
+    border-bottom: 3px dotted red;
+    padding-bottom: 15px;
+}
+
+.error-message{
+color: red;
+}
+
+@media only screen and (max-width: 438px){
+    .student_img{
+        padding: 10px 3px;
+    }
+    .container {
+        width: 95%;
+    }
+}
+@media only screen and (max-width: 376px){
+    .student_img{
+        padding: 10px 3px;
+    }
+    .container {
+        width: 95%;
+    }
+    .student_img h5{
+        font-size: 5vw;
+        text-align: center;
+    }
+}
+

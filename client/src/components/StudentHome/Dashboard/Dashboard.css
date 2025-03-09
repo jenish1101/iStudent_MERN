@@ -1,0 +1,200 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+  font-family: 'Poppins', sans-serif;
+  padding: 50px 0px;
+}
+
+/* Student Card (Left Side) */
+.student-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  min-width: 20%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 10px; */
+}
+
+.student-card:hover {
+  transform: scale(1.05);
+}
+
+.student-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  margin-bottom: 10px;
+}
+
+.student-card h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.student-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Student Details (Right Side) */
+.student-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 85%;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e6e6e6;
+  transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+  background-color: #f4f4f4;
+  transform: translateX(5px);
+}
+
+.icon {
+  color: #3498db;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.detail-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Hobbies Tags */
+.hobbies {
+  margin-top: 10px;
+}
+
+.hobby-tag {
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.hobby-tag:hover {
+  background-color: #2c82c9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-details {
+    width: 90%;
+  }
+}
+
+
+/* .student-info {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+} */
+
+
+/* ✅ Quick Access Section */
+.student-options {
+  min-width: 85%;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* ✅ Section Heading */
+.student-options h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* ✅ Grid Layout */
+.quick-access-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ✅ Individual Cards */
+.option-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* ✅ Card Hover Effect */
+.option-card:hover {
+  background-color: #4CAF50;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Card Emoji Styling */
+.option-card::before {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .quick-access-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .quick-access-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .option-card {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* ✅ Smooth Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

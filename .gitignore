@@ -1,0 +1,56 @@
+# Node.js dependencies  
+node_modules/  
+.env  
+
+# Logs  
+logs  
+*.log  
+npm-debug.log*  
+yarn-debug.log*  
+yarn-error.log*  
+
+# Build files (Frontend Build)  
+client/build/  
+
+# IDE settings  
+.vscode/  
+.idea/  
+
+# System files  
+.DS_Store  
+Thumbs.db  
+
+# Misc  
+*.bak  
+*.tmp  
+
+# Upload Files (if any)  
+client/public/uploads/  
+client/src/assets/images/  
+client/public/Images/  
+
+# Cache files  
+.cache/  
+dist/  
+
+# Environment variables  
+server/.env  
+client/.env  
+
+# Coverage (if you use testing)  
+coverage/  
+
+# Generated lock files  
+package-lock.json  
+yarn.lock  
+pnpm-lock.yaml  
+
+# Backend uploaded files (if any)  
+server/public/uploads/  
+
+# Build Files for Deployment  
+server/build/  
+client/build/  
+
+# Production Files  
+.env.production  
